@@ -10,10 +10,11 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', TemplateView.as_view(template_name="index.html")),
-    url(r'^services/', TemplateView.as_view(template_name="services.html")),
+    url(r'^/', TemplateView.as_view(template_name="services.html")),
     url(r'^projects/', TemplateView.as_view(template_name="projects.html")),
     url(r'^about/', TemplateView.as_view(template_name="about.html")), 
     url(r'^contact/', TemplateView.as_view(template_name="contact.html")),
+    url(r'^email/', TemplateView.as_view(template_name="email.html")),
     #url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:

@@ -25,7 +25,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper" >
       <div class="container">
 
         <div class="navbar navbar-inverse navbar-static-top">
@@ -40,12 +40,15 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/projects">Projects</a></li>
+                <li class="active" style="margin-left:80px; font-size:20px"><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/contact">Contact Us</a></li>
+              </li>
               </ul>
+            <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="/email">Log In</a></li>
+          </ul>
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <img src="{% static "main.jpg" %}" >
           <div class="container">
             <div class="carousel-caption">
               <h1 style="font-size:60px">ASCO</h1>
@@ -75,22 +78,22 @@
           </div>
         </div>
         <div class="item">
-          <img src="{% static "samsung_engineering_logo.png" %}" >
+          <img src="{% static "header-construction.jpg" %}" >
           <div class="container">
             <div class="carousel-caption">
-              <h1>Our Major Clients</h1>
+              <h1>Drive your business forward with the talent you need</h1>
               <p></p>
               <p><a class="btn btn-large btn-primary" href="#">View Clientele</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+          <img src="{% static "ss1.jpg" %}">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+              <h1>Skilled, Experienced & Certified Work Force</h1>
+              <p>ASCO employees have been rigourously trained and certified from some of the leading Industries of the Kingdom which makes them an effective team when it comes to time and work.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse categories</a></p>
             </div>
           </div>
         </div>
@@ -137,13 +140,14 @@
 
       <hr class="featurette-divider">
 
+
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">We Make Your People <span class="text-muted">Our Business </span></h2>
+          <h2 class="featurette-heading">Manpower <span class="text-muted">  Support Services</span></h2>
           <p class="lead"> For more than 12 years, we’ve been at the forefront of the world of work, which gives us unparalleled expertise in leveraging human potential and an in-depth knowledge of business evolution. We apply our insight to create a continuum of staffing solutions designed to enhance business agility, productivity and competitiveness, with extraordinary results. You’ll be set for success more than you ever thought possible. </p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="col-md-5" style="margin-top:background-color:orange">
+          <img class="featurette-image img-responsive" src="{% static "front3.jpg"%}"  >
         </div>
       </div>
 
@@ -151,11 +155,11 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src={%static "he.jpg" %}>
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Drive your business forward with the talent you need.<span class="text-muted"></span></h2>
-          <p class="lead">ASCO takes every measure to develop a deep understanding of your company, industry trends and environments. Then we tailor our expertise to help you best capitalize on talent-driven opportunities unique to your industry.</p>
+          <h2 class="featurette-heading">Industrial Equipment <span class="text-muted">Rental Services</span></h2>
+          <p class="lead">ASCO takes every measure to develop a deep understanding of your company, industry trends and environments. Then we tailor our expertise to help you best capitalize on tools & equipment unique to your industry.</p>
         </div>
       </div>
 
@@ -163,11 +167,11 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Skilled, Experienced & Certified <span class="text-muted"> Work Force</span></h2>
-          <p class="lead">ASCO employees have been rigourously trained and certified from some of the leading Industries of the Kingdom which makes them an effective team when it comes to time and work.</p>
+          <h2 class="featurette-heading">Global<span class="text-muted"> Trading & Supply </span>Services</h2>
+          <p class="lead"></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="{% static "safety.jpg" %}">
         </div>
       </div>
 
