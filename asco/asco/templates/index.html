@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load thumbnail %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -68,7 +69,9 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
+          {% thumbnail %}
           <img src="{% static "main.jpg" %}" >
+          {% endthumbnail %}
           <div class="container">
             <div class="carousel-caption">
               <h1 style="font-size:60px">ASCO</h1>
@@ -83,7 +86,7 @@
             <div class="carousel-caption">
               <h1>Drive your business forward with the talent you need</h1>
               <p></p>
-              <p><a class="btn btn-large btn-primary" href="#">View Clientele</a></p>
+              <p><a class="btn btn-large btn-primary" href="#">View Clients</a></p>
             </div>
           </div>
         </div>
